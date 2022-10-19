@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabler Oppgave</title>
+</head>
+
+
+<body>
+<div id="output"></div>
+<Button onclick="setnumber16()">Set number to 16</Button>
+<Button onclick="setnumber47()">Set number to 47</Button>
+
+<script>
+    var number = 5; //int
+    var floatnumber = 5.5; //kommaseparert tall
+    var text = "en liten tekstbit"; //string
+    var enkelTegn = 'a'; //char
+    var booleans = true; //booleans
+
+    var outputDiv = document.getElementById('output');
+    var nunToShow = 0;
+
+    function setnumber16() {
+        nunToShow = 16;
+        outputDiv.innerHTML = nunToShow
+    }
+    function setnumber47() {
+        nunToShow = 47;
+        nunToShow.innerHTML = nunToShow
+    }
+</script>
+
+
+</body>
+</html>
