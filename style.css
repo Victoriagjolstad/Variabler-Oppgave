@@ -1,6 +1,9 @@
 body {
     background: linear-gradient(135deg, #8C90A4 0%, #0004CB 57%, #0A3975 100%);
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 25px;
+    color: #AFAFAF;
 }
 
 #JsTimer {
@@ -27,6 +30,6 @@ button {
 button:hover {
 cursor: pointer;
 background-color: #0e4da0;
-color: #fff;
+color: rgb(0, 0, 0);
 transaction; //fix later
 }
