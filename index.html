@@ -3,35 +3,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variabler Oppgave</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-<div id="output"></div>
-<Button onclick="setnumber16()">Set number to 16</Button>
-<Button onclick="setnumber47()">Set number to 47</Button>
+    <div id="JsTimer">
+        <div id="timer">
+        00:00
+        </div>
+    </div>
+    <button onclick="start"();>Start</button>
+    <button onclick="clock"();>Clock</button>
+    <button onclick="pause"();>Pause</button>
+    <button onclick="stop"();>Stop</button>
+   
+    <script>
+      var timer;
+      var ele = document.getElementById('timer')
 
-<script>
-    var number = 5; //int
-    var floatnumber = 5.5; //kommaseparert tall
-    var text = "en liten tekstbit"; //string
-    var enkelTegn = 'a'; //char
-    var booleans = true; //booleans
+      (function () {
+        var sec = 0;
+        timer = setInterval (() => {
+            ele.innerHTML = '00:' + sec
+            sec ++;},
+            1000) // each 1 second
 
-    var outputDiv = document.getElementById('output');
-    var nunToShow = 0;
+        } )
 
-    function setnumber16() {
-        nunToShow = 16;
-        outputDiv.innerHTML = nunToShow
-    }
-    function setnumber47() {
-        nunToShow = 47;
-        nunToShow.innerHTML = nunToShow
-    }
-</script>
+        function pause() {
+            clearInterval(timer);
+        }
 
+        function clock() {
+        let timerStr = timer + " - "
+        
+        }
 
+        function stop() {
+            
+        }
+    </script>
+    
 </body>
+
 </html>
