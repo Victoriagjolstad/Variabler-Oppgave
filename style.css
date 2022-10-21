@@ -2,10 +2,9 @@ body {
     background: linear-gradient(135deg, #8C90A4 0%, #0004CB 57%, #0A3975 100%);
     text-align: center;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 200%;
+    font-size: 150px;
     color: #AFAFAF;
-    margin: auto;
-    max-width: 500px;
+    
 }
 
 #JsTimer {
@@ -15,8 +14,8 @@ body {
 #timer {
     background: #fff;
     color: #000;
-    width: 100px;
-    margin: 50px auto;
+    width: 600px;
+    margin: 150px auto;
 
 }
 
